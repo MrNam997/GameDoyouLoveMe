@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    #no{
+        position: relative;
+    }
+</style>
+<body>
+
+    <h2> Có quét nhà không thì bảo nè?</h2>
+    <button id ="yes" onclick="yes()">CÓ</button>
+    <button id ="no" onmouseover="over()">KHÔNG</button>
+
+    <script>
+        function yes() {
+            alert(" Ngoan lắm !!! ");
+        }
+        function over() {
+            let left =  Math.round( Math.random()* window.innerWidth);
+            let top = Math.round( Math.random()*window.innerHeight);
+            document.getElementById("yes").style.left = left +'px';
+            document.getElementById("no").style.top = top + 'px';
+        }
+    </script>
+</body>
+</html>
